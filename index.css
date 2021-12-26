@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Jost&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:wght@300&display=swap');
+
+* {
+padding: 0;
+margin: 0;
+font-family: 'Jost';
+text-decoration: none;
+}
+
+.global--wrap--layout {
+  display: grid;
+  width: 100%;
+  /* height: 3888px; */
+}
+
+.wrap--grid {
+  display: grid;
+  grid-template-rows: 80px auto 680px;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: #050402;
+}
+
+.header--wrap {
+  display: grid;
+  grid-template-columns: max-content max-content 3fr 20px max-content;
+  grid-template-rows: 80px;
+  grid-template-areas:
+  "header-menu header--menu--img header--price header--img--shop header--sum--shop";
+  align-items: center;
+  /* justify-items: center; */
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.header-menu {
+  grid-area: header-menu;
+  color: #FAF6F2;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.header--menu--img {
+  margin-top: 8px;
+  grid-area: header--menu--img;
+  margin-left: 12px;
+}
+
+.header--price {
+  grid-area: header--price;
+  color: #FAF6F2;
+  font-size: 15px;
+  justify-self: end;
+}
+
+.header--img--shop {
+  grid-area: header--img--shop;
+  margin-left: 8px;
+}
+
+.header--sum--shop {
+margin-bottom: 22px
+}
+
+/*---------------------header below------------------------*/
+
+.main{
+  grid-area: main;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.text--choice--main {
+  color: #D0D0D0;
+  font-size: 15px;
+  margin-top: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.text--choice--main:hover {color: #636B78;}
+
+.text--choice--nav {
+   color: #636B78;
+   font-size: 15px;
+}
+
+.main--h1 {
+  font-weight: 400;
+  color: #3E424B;
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: 'Forum';
+}
+
+.main--p1 {
+  color: #3E424B;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.main--h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #3E424B;
+  margin-top: 60px;
+}
+
+.main--h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3E424B;
+  margin-top: 20px;
+
+}
+
+.main--p2 {
+  color: #3E424B;
+  margin-top: 13px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.main--ul {
+  list-style-type: none;
+  margin-left: 6px;
+  font-weight: 400;
+  color: #636B78;
+  margin-top: 10px
+}
+
+.main--li::before {content: "·";}
+
+.main--h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #3E424B;
+  margin-top: 13px;
+}
+
+.main--p3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #BB8C5F;
+  margin-top: 13px;
+}
+
+.main--ul--2 {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.main--li--2 {
+  color: #636B78;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.main--li--2::before {content: "·";}
+
+.main--h5 {
+font-weight: 700;
+font-size: 20px;
+color: #3E424B;
+margin-top: 20px;
+}
+
+.main--p4 {
+  font-weight: 600;
+  font-size: 15px;
+  color: #3E424B;
+  margin-top: 15px;
+}
+
+.main--ul--3 {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.main--li--3 {
+  color: #636B78;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.main--li--3::before {content: "·";}
+
+.main--img {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+/*--------------------main content below ----------------------*/
+
+.footer {
+  grid-area: footer;
+  background-color: #050402;
+}
+
+.footer--logo {margin: 56px 20px 40px 20px;}
+
+.footer--info {
+  cursor: pointer;
+  color: #E9ECF1;
+  margin: 0px 20px 40px 20px;
+  font-size: 17px;
+  font-weight: 500;
+  display: grid;
+  grid-column-gap: 75px;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas:
+  "promocode about_us"
+  "discount nav"
+  "help help";
+}
+
+.info--promocode {grid-area: promocode;}
+
+.info--discount {grid-area: discount;}
+
+.info--help {grid-area: help;}
+
+.info--about_us {grid-area: about_us;}
+
+.info--nav {grid-area: nav;}
+
+.footer--underline {
+  border-bottom: 1.4px solid #524336;
+  margin-top: 60px;
+  margin-bottom: 65px;
+  width: 100%;
+}
+
+
+
+.footer--phone {
+  display: block;
+  cursor: pointer;
+  color: #FAF6F2;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 60px;
+  margin-left: 22px;
+}
+
+.phone--logo {
+  width: 18px;
+  height: 18px;
+  margin-top: 0;
+}
+
+.footer--nav {
+  margin-left: 17px;
+  margin-top: 20px;
+  display: grid;
+  grid-column-gap: 12px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: max-content max-content max-content;
+}
+
+.footer--p {
+  margin-left: 17px;
+  color: #636B78;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 20px
+}
+
+.footer--img--mail {
+  /* display: block; */
+  margin-left: 21px;
+  margin-top: 36px;
+}
+
+.footer--email {
+  font-size: 20px;
+  font-weight: 400;
+  color: #FAF6F2;
+  margin-left: 14px;
+}
+
+
+
+/* .footer--line--2 {
+  display: none;
+}
+
+@media screen and (min-width: 320px)  {
+  .footer--line {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .footer--line--2 {
+    display: block;
+  } */
+}
